@@ -54,7 +54,7 @@ const registerController = async (req, res) => {
       message: "Registeration Successfull Please Login",
     });
   } catch (error) {
-    console.log(error);
+   
     return res.status(500).send({
       success: false,
       message: "Register API Issue",
@@ -103,7 +103,7 @@ const loginController = async (req, res) => {
       user,
     });
   } catch (error) {
-    console.log(error);
+    
     return res.status(500).send({
       success: false,
       message: "Error in Login message",
@@ -141,7 +141,7 @@ const updateUsercontroller = async (req, res) => {
       message: "Profile Updated Please Login",
     });
   } catch (error) {
-    console.log(error);
+   
     res.status(500).send({
       success: false,
       message: "Error In User Update Api",
