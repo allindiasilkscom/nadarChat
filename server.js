@@ -7,7 +7,7 @@ const connectDB = require("./config/db");
 
 dotenv.config();
 connectDB();
-//Rest Object
+
 
 const app = express();
 
